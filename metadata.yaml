@@ -1,0 +1,32 @@
+_repo: The-Life-and-Adventures-of-Robinson-Crusoe_521
+creator:
+  author:
+    agent_name: Defoe, Daniel
+    aliases:
+    - Defo, Daniel
+    - John, Gabriel
+    - Moreton, Andrew
+    deathdate: 1731
+    gutenberg_agent_id: '204'
+    url: http://www.gutenberg.org/2009/agents/204
+    wikipedia:
+    - http://en.wikipedia.org/wiki/Daniel_Defoe
+    - http://www.gutenberg.org/browse/authors/j#a26500
+gutenberg_issued: '1996-05-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '521'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- '!lcsh:Atlantic Ocean -- Fiction'
+- '!lcc:PR'
+- '!lcsh:Crusoe, Robinson (Fictitious character) -- Fiction'
+- '!lcsh:Adventure stories'
+- '!lcsh:Islands -- Fiction'
+- '!lcsh:Castaways -- Fiction'
+- '!lcsh:Shipwreck survival -- Fiction'
+title: The Life and Adventures of Robinson Crusoe
+url: http://www.gutenberg.org/ebooks/521

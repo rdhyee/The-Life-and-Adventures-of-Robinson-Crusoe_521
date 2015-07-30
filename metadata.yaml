@@ -3,15 +3,15 @@ creator:
   author:
     agent_name: Defoe, Daniel
     aliases:
-    - Defo, Daniel
-    - John, Gabriel
     - Moreton, Andrew
+    - John, Gabriel
+    - Defo, Daniel
     deathdate: 1731
     gutenberg_agent_id: '204'
     url: http://www.gutenberg.org/2009/agents/204
     wikipedia:
-    - http://en.wikipedia.org/wiki/Daniel_Defoe
     - http://www.gutenberg.org/browse/authors/j#a26500
+    - http://en.wikipedia.org/wiki/Daniel_Defoe
 gutenberg_issued: '1996-05-01'
 gutenberg_type: Text
 identifiers:
@@ -21,12 +21,12 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Atlantic Ocean -- Fiction'
-- '!lcc:PR'
-- '!lcsh:Crusoe, Robinson (Fictitious character) -- Fiction'
-- '!lcsh:Adventure stories'
-- '!lcsh:Islands -- Fiction'
-- '!lcsh:Castaways -- Fiction'
 - '!lcsh:Shipwreck survival -- Fiction'
+- '!lcc:PR'
+- '!lcsh:Atlantic Ocean -- Fiction'
+- '!lcsh:Crusoe, Robinson (Fictitious character) -- Fiction'
+- '!lcsh:Castaways -- Fiction'
+- '!lcsh:Islands -- Fiction'
+- '!lcsh:Adventure stories'
 title: The Life and Adventures of Robinson Crusoe
 url: http://www.gutenberg.org/ebooks/521

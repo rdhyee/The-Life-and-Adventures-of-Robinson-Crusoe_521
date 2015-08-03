@@ -27,12 +27,12 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Shipwreck survival -- Fiction'
-- '!lcc:PR'
-- '!lcsh:Atlantic Ocean -- Fiction'
-- '!lcsh:Crusoe, Robinson (Fictitious character) -- Fiction'
-- '!lcsh:Castaways -- Fiction'
-- '!lcsh:Islands -- Fiction'
-- '!lcsh:Adventure stories'
+- '!lcsh: Atlantic Ocean -- Fiction'
+- '!lcsh: Adventure stories'
+- '!lcsh: Islands -- Fiction'
+- '!lcsh: Castaways -- Fiction'
+- '!lcc: PR'
+- '!lcsh: Crusoe, Robinson (Fictitious character) -- Fiction'
+- '!lcsh: Shipwreck survival -- Fiction'
 title: The Life and Adventures of Robinson Crusoe
 url: http://www.gutenberg.org/ebooks/521

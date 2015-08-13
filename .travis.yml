@@ -1,0 +1,32 @@
+language: ruby
+before_install:
+- gem install asciidoctor tilt
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
+  -d book book.asciidoc -o book.html
+- git clone https://github.com/gitenberg-dev/HTMLBook
+- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
+- cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
+- cp cover.jpg OEBPS/cover.jpg
+- if test -d "./images"; then mv ./images ./OEBPS/ ;fi
+- zip -rX book.epub mimetype
+- zip -rX book.epub OEBPS/ META-INF/
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
+- mv book.epub The-Life-and-Adventures-of-Robinson-Crusoe.epub
+branches:
+  only:
+  - master
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: sRMEpoWDqE9ii4zYquBMomJSRFszTIa0xkpZC20/Rz38swwHCJ49NgTDp5AI9FsFsQrPIO4eOdUHhNvVx3VjtBDoqMORBhe2QApR+/fzZXrWN8DTIVAPhlzCvngKyao6zPUs3JDT4COZmhAoPyFVSgYySyuaWKV7/U6gp1CwM+stxSdgKQeFX1IFMU7z8fl4bF/d615/PNYoNX8LfUOoI9ZagQrwkySjwZ6ja8xEhKFCwjP1kOI8JSyOxnC2rhOpwwkdsmL0LH5KgIiczXbYq6NO2UzfeF4RRtxN92jnAORPGbL9p0CLuxXsOkghLPoVRtKIqJ8e3SQ1KGyHEhb0AM576o3NCauglUkQhS6gNlK9ErrI5vQpIi5ADOCfG4JAWDiwGO8Dl4V47gSMuO0R8xIvJ2mZwFM9ijYM2juwiURsaVnYQ/QCn0oag1ToyM0SieteKjOFg4jT/cL/+D9VyWKjf7byB18yrJxMQjSKyXi2JeBiuuTqxNrNa6X2xp4CWpONcL7wzRQvuBngrjuR6fs3dCC4HSKimmuoUqu3dkUkpDbD/UNSuNBTybZ/lVQa993Lp3ZW8G86oji4DXO8Wwft1t+Cm3JDUCs0kARDHzuL9ZNuaQwQ1HXe2IgF6vXFyLKlG3oXRK4RAxyODivIjeTA9FWvS6TV16Z5lTm5DiM=
+  file: The-Life-and-Adventures-of-Robinson-Crusoe.epub
+  "on":
+    repo: GITenberg/The-Life-and-Adventures-of-Robinson-Crusoe_521
+addons:
+  apt:
+    packages:
+    - xsltproc

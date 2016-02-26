@@ -1,5 +1,5 @@
 _repo: The-Life-and-Adventures-of-Robinson-Crusoe_521
-_version: 0.0.2
+_version: 0.1.0
 covers:
 - attribution: J.D. Reeves, 2015
   cover_type: original
@@ -36,5 +36,6 @@ subjects:
 - '!lcc: PR'
 - '!lcsh: Crusoe, Robinson (Fictitious character) -- Fiction'
 - '!lcsh: Shipwreck survival -- Fiction'
+- GITenberg
 title: The Life and Adventures of Robinson Crusoe
 url: http://www.gutenberg.org/ebooks/521
